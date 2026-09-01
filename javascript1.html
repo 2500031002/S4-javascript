@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Examples</title>
+        <script>
+            function add(){
+            let x = parseInt(document.getElementById("first").value);
+            let y = parseInt(document.getElementById("second").value);
+            document.getElementById("result").innerHTML = x + y;
+            document.getElementById("result").style = "color: green; font-size:25px;"
+            }
+            function sub(){
+            let x = parseInt(document.getElementById("first").value);
+            let y = parseInt(document.getElementById("second").value);
+            document.getElementById("result").innerHTML = x - y;
+            document.getElementById("result").style = "color: red; font-size:25px"
+            }
+            function mul(){
+            let x = parseInt(document.getElementById("first").value);
+            let y = parseInt(document.getElementById("second").value);
+            document.getElementById("result").innerHTML = x * y;
+            document.getElementById("result").style = "color: blue; font-size:25px"
+            }
+            function divide(){
+            let x = parseInt(document.getElementById("first").value);
+            let y = parseInt(document.getElementById("second").value);
+            document.getElementById("result").innerHTML = x / y;
+            document.getElementById("result").style = "color: rgb(200,150,180); font-size:25px"
+            }
+
+            function readdata(){
+                alert(document.getElementById("read").innerHTML)
+            }
+        </script>
+    </head>
+    <body>
+        <h3 style="font-size: 40px; color: crimson;text-align: center;">Inline Script Example</h3>
+        <button onclick="alert('Welcome to Javascript!')"
+        style="color: brown;padding: 10px;margin: 15px; font-weight: bold;
+        background-color: bisque; height: 50px;width: 150px; font-size: 25px;">
+        Click Me!
+        </button>
+        <hr>
+        <h3 style="font-size: 25px; color: chartreuse; text-align: center; text-decoration: double;">
+            Internal Script
+        </h3>
+        <p>
+            Enter Number1: <input type="text" id="first" placeholder="Enter Number">
+        </p>
+        <p>
+            Enter Number2: <input type="text" id="second" placeholder="Enter Number">
+        </p>
+        <button onclick="add()">Add</button><br>
+        <button onclick="sub()">Sub</button><br>
+        <button onclick="mul()">Mul</button><br>
+        <button onclick="divide()">Divide</button><br>
+        <p id="result"></p>
+        <hr height="5px">
+        <p id="read">Lorem ipsum dolor sit amet.</p>
+        <button onclick="readdata()">Read Data</button>
+
+        <hr height="10px">
+        <script src="external.js"></script>
+        <p id="data" style="font-size: 30px; color: crimson; border: 2px solid green;
+        border-radius: 10px; width: 150px; height: 100px;"></p>
+        <button onclick="data()">ExternalJs</button>
+    </body>
+</html>
