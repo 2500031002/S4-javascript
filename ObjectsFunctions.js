@@ -72,3 +72,12 @@ delete student.address
 console.log("Student Information after deleting the address property")
 console.log(student)
 
+// Destructuring of Object
+
+let {id, name, course, year} = student
+console.log("Destructured Values:")
+console.log("Id: ", id)
+console.log("Name: ", name)
+console.log("Course: ", course)
+console.log("Year: ", year)
+

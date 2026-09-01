@@ -62,3 +62,26 @@ function greetings(callgreet){
 }
 greetings(wishes)
 greetings(wish)
+
+
+// callback function with arguments
+
+function add1(x,y){
+    console.log("Addition of two numbers: ", x + y)
+}
+
+function multiply(x,y){
+    console.log("Multiplication of two numbers: ", x * y)
+}
+
+function subtract(x,y){
+    console.log("Subtraction of two numbers: ", x - y)
+}
+
+function calculator(x,y,operation){
+    operation(x,y)
+}
+
+calculator(45,55,add1)
+calculator(45,55,multiply)
+calculator(45,55,subtract)
